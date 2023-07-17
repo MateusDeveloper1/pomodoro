@@ -186,28 +186,6 @@ mixin _$PomodoroStore on _PomodoroStore, Store {
   }
 
   @override
-  bool estaTrabalhando() {
-    final _$actionInfo = _$_PomodoroStoreActionController.startAction(
-        name: '_PomodoroStore.estaTrabalhando');
-    try {
-      return super.estaTrabalhando();
-    } finally {
-      _$_PomodoroStoreActionController.endAction(_$actionInfo);
-    }
-  }
-
-  @override
-  bool estaDescansando() {
-    final _$actionInfo = _$_PomodoroStoreActionController.startAction(
-        name: '_PomodoroStore.estaDescansando');
-    try {
-      return super.estaDescansando();
-    } finally {
-      _$_PomodoroStoreActionController.endAction(_$actionInfo);
-    }
-  }
-
-  @override
   String toString() {
     return '''
 iniciado: ${iniciado},
