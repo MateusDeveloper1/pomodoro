@@ -68,9 +68,11 @@ abstract class _PomodoroStore with Store {
 
   @action
   void decrementarTempoTrabalho() {
-    tempoTrabalho--;
-    if (estaTrabalhando()) {
-      reiniciar();
+    if (tempoTrabalho > 1) {
+      tempoTrabalho--;
+      if (estaTrabalhando()) {
+        reiniciar();
+      }
     }
   }
 
